@@ -1,5 +1,3 @@
-# tests/test_pyls.py
-import pytest
 from pyls.main import list_directory
 
 # Sample JSON data for testing
