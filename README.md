@@ -56,6 +56,7 @@ This command lists the files and directories in the root of the JSON structure.
 - `-t`, `--time`: Sort by modification time, oldest first.
 - `-h`, `--human-readable`: Display file sizes in human-readable format.
 - `--filter`: Filter output to show only files or directories (`file` or `dir`).
+- `--json-file`: Specify the path to the JSON file containing the directory structure. Defaults to `xdata/structure.json` if not provided.
 
 ### Examples
 
@@ -77,6 +78,11 @@ Filter to show only directories:
 pyls --filter=dir
 ```
 
+List all files and directories with detailed information using a custom JSON file.
+
+```bash
+pyls -l --json-file=/path/to/your/custom_structure.json
+```
 ## Development
 
 ### Setting Up the Development Environment
@@ -84,7 +90,7 @@ pyls --filter=dir
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/pyls.git
+   git clone https://github.com/AshishMahendra/pyls_project.git
    cd pyls
    ```
 
